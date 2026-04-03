@@ -13,9 +13,10 @@ export default function Navbar() {
   }, []);
 
   const links = [
-    { href: "#about", label: "About" },
-    { href: "#members", label: "Members" },
-    { href: "#philosophy", label: "Philosophy" },
+    { href: "/#about", label: "About" },
+    { href: "/#members", label: "Members" },
+    { href: "/#philosophy", label: "Philosophy" },
+    { href: "/projects", label: "Projects" },
   ];
 
   return (
@@ -28,7 +29,7 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
-          <a href="#" className="flex items-center gap-2 group">
+          <a href="/" className="flex items-center gap-2 group">
             <span className="text-cyan-400 font-mono font-bold text-lg group-hover:text-cyan-300 transition-colors">
               &lt;Marine /&gt;
             </span>

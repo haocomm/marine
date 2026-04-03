@@ -1,3 +1,5 @@
+import AgentAvatar from "./AgentAvatar";
+
 interface MemberProps {
   name: string;
   role: string;
@@ -17,6 +19,8 @@ export default function MemberCard({
   icon,
   isPrime,
 }: MemberProps) {
+  const agentName = name as "marine-prime" | "marine-backend" | "marine-frontend" | "marine-devops" | "marine-research";
+
   return (
     <div
       className={`relative p-6 rounded-xl border transition-all duration-300 group hover:-translate-y-1 ${
@@ -30,17 +34,9 @@ export default function MemberCard({
         className={`absolute top-0 left-6 right-6 h-px bg-gradient-to-r from-transparent ${color} to-transparent opacity-0 group-hover:opacity-100 transition-opacity`}
       />
 
-      {/* Icon + Name */}
+      {/* Avatar + Name */}
       <div className="flex items-start gap-4 mb-4">
-        <div
-          className={`w-12 h-12 rounded-lg flex items-center justify-center text-lg shrink-0 ${
-            isPrime
-              ? "bg-cyan-400/20 text-cyan-400"
-              : "bg-navy-800 text-navy-300 group-hover:text-cyan-400 transition-colors"
-          }`}
-        >
-          {icon}
-        </div>
+        <AgentAvatar agent={agentName} size={48} />
         <div>
           <h3 className="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">
             {name}
