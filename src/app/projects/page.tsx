@@ -31,6 +31,26 @@ const projects = [
       "Navy/cyan theme design",
     ],
   },
+  {
+    name: "haocomcloud.com",
+    description:
+      "Haocomcloud Landing Page -- AI-powered platform infrastructure landing page สำหรับ 6 ระบบ production (cybersecurity, monitoring, automation ฯลฯ) สร้างด้วย Next.js 16 + Tailwind 4",
+    techStack: [
+      "Next.js 16",
+      "Tailwind CSS 4",
+      "TypeScript",
+      "Lucide React",
+      "Vercel",
+    ],
+    github: "https://github.com/haocomm/haocomcloud.com",
+    status: "completed" as const,
+    highlights: [
+      "10 section landing page (Hero, Capabilities, Workflow, Dashboard, Trust, Deployed Systems)",
+      "Glass morphism design with purple/cyan gradient theme",
+      "Scroll-triggered animations",
+      "Deployed on Vercel (static export)",
+    ],
+  },
 ];
 
 export default function ProjectsPage() {
