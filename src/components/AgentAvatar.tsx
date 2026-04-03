@@ -1,5 +1,5 @@
 interface AvatarProps {
-  agent: "marine-prime" | "marine-backend" | "marine-frontend" | "marine-devops" | "marine-research";
+  agent: "marine-prime" | "marine-backend" | "marine-frontend" | "marine-devops" | "marine-research" | "marine-security";
   size?: number;
   className?: string;
 }
@@ -116,6 +116,28 @@ export default function AgentAvatar({ agent, size = 48, className = "" }: Avatar
         <defs>
           <radialGradient id="research-grad" cx="60" cy="60" r="50">
             <stop stopColor="#a78bfa" />
+            <stop offset="1" stopColor="#060f1d" />
+          </radialGradient>
+        </defs>
+      </svg>
+    ),
+    "marine-security": (
+      <svg width={size} height={size} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="60" cy="60" r="58" fill="#0a192f" stroke="#f87171" strokeWidth="2" />
+        <circle cx="60" cy="60" r="50" fill="url(#security-grad)" opacity="0.2" />
+        {/* Shield */}
+        <path d="M60 24L88 38V58C88 78 74 92 60 98C46 92 32 78 32 58V38L60 24Z" fill="#1d3674" stroke="#f87171" strokeWidth="2" />
+        {/* Checkmark inside shield */}
+        <path d="M46 58L56 68L76 48" stroke="#f87171" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+        {/* Lock keyhole */}
+        <circle cx="60" cy="78" r="4" fill="#f87171" opacity="0.4" />
+        <rect x="58" y="78" width="4" height="6" rx="1" fill="#f87171" opacity="0.4" />
+        {/* Scan lines */}
+        <path d="M40 44L50 38" stroke="#f87171" strokeWidth="1" opacity="0.3" strokeLinecap="round" />
+        <path d="M80 44L70 38" stroke="#f87171" strokeWidth="1" opacity="0.3" strokeLinecap="round" />
+        <defs>
+          <radialGradient id="security-grad" cx="60" cy="60" r="50">
+            <stop stopColor="#f87171" />
             <stop offset="1" stopColor="#060f1d" />
           </radialGradient>
         </defs>

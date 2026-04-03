@@ -114,7 +114,7 @@ export default function About() {
             </div>
             <div className="w-px h-6 bg-cyan-400/40" />
             <div className="flex flex-wrap justify-center gap-3">
-              {["Backend", "Frontend", "DevOps", "Research"].map((agent) => (
+              {["Backend", "Frontend", "DevOps", "Research", "Security"].map((agent) => (
                 <div
                   key={agent}
                   className="px-4 py-2 rounded-lg bg-navy-800/80 border border-navy-600/50 text-navy-200 font-mono text-xs"
