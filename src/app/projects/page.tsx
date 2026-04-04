@@ -4,26 +4,43 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projects = [
   {
-    name: "fongkhumfarm-v2",
+    name: "blog.ipptt.com",
     description:
-      "เว็บไซต์ฟองคำฟาร์ม -- ฟาร์มผลิตปุ๋ยมูลไส้เดือน จ.เชียงใหม่ สร้างด้วย Next.js 15 + Tailwind CSS รองรับ responsive design ครบทุกอุปกรณ์",
-    techStack: ["Next.js 15", "Tailwind CSS", "TypeScript", "Static Export"],
-    github: "https://github.com/haocomm/fongkhumfarm-v2",
+      "Personal/Tech Blog -- บล็อกส่วนตัวสำหรับบทความเทคโนโลยี สร้างด้วย Next.js 16 + MDX รองรับ dark/light mode, search, RSS feed, categories, tags",
+    techStack: ["Next.js 16", "Tailwind CSS 4", "MDX", "Vercel"],
+    github: "https://github.com/haocomm/blog-ipptt",
+    liveUrl: "https://blog.ipptt.com",
     status: "completed" as const,
     highlights: [
-      "Blog system สำหรับบทความเกษตร",
-      "Thai fonts (Noto Sans Thai)",
-      "Responsive design ทุกหน้าจอ",
-      "14 static pages",
+      "7 blog posts จาก retrospective sessions",
+      "Client-side search (Cmd+K)",
+      "RSS 2.0 feed + Share buttons",
+      "Related posts + Table of Contents",
+      "39 static pages",
     ],
   },
   {
-    name: "marine",
+    name: "haocomcloud.com",
     description:
-      "เว็บแนะนำ Team Marine -- ทีม AI agents 5 ตัว ที่ทำงานร่วมกันเป็นทีมพัฒนาซอฟต์แวร์ สร้างด้วย Next.js 15 + Tailwind CSS",
-    techStack: ["Next.js 15", "Tailwind CSS", "TypeScript", "Vercel"],
+      "Landing page สำหรับ Haocomm Cloud -- แนะนำ services, capabilities, workflow และ deployed systems สร้างด้วย Next.js 16 + Tailwind CSS",
+    techStack: ["Next.js 16", "Tailwind CSS 4", "Lucide React", "Vercel"],
+    github: "https://github.com/haocomm/haocomcloud.com",
+    liveUrl: "https://haocomcloud.com",
+    status: "completed" as const,
+    highlights: [
+      "10 sections: Hero, Capabilities, Workflow, Dashboard",
+      "Navy/cyan theme matching marine.ipptt.com",
+      "Responsive design + animations",
+    ],
+  },
+  {
+    name: "marine.ipptt.com",
+    description:
+      "เว็บแนะนำ Team Marine -- ทีม AI agents 5 ตัว ที่ทำงานร่วมกันเป็นทีมพัฒนาซอฟต์แวร์ สร้างด้วย Next.js 16 + Tailwind CSS",
+    techStack: ["Next.js 16", "Tailwind CSS 4", "TypeScript", "Vercel"],
     github: "https://github.com/haocomm/marine",
-    status: "in-progress" as const,
+    liveUrl: "https://marine.ipptt.com",
+    status: "completed" as const,
     highlights: [
       "Team member showcase with SVG avatars",
       "Philosophy and workflow documentation",
@@ -43,12 +60,27 @@ const projects = [
       "Vercel",
     ],
     github: "https://github.com/haocomm/haocomcloud.com",
+    liveUrl: "https://haocomcloud.com",
     status: "completed" as const,
     highlights: [
       "10 section landing page (Hero, Capabilities, Workflow, Dashboard, Trust, Deployed Systems)",
       "Glass morphism design with purple/cyan gradient theme",
       "Scroll-triggered animations",
       "Deployed on Vercel (static export)",
+    ],
+  },
+  {
+    name: "fongkhumfarm-v2",
+    description:
+      "เว็บไซต์ฟองคำฟาร์ม -- ฟาร์มผลิตปุ๋ยมูลไส้เดือน จ.เชียงใหม่ สร้างด้วย Next.js 15 + Tailwind CSS รองรับ responsive design ครบทุกอุปกรณ์",
+    techStack: ["Next.js 15", "Tailwind CSS", "TypeScript", "Static Export"],
+    github: "https://github.com/haocomm/fongkhumfarm-v2",
+    status: "in-progress" as const,
+    highlights: [
+      "Blog system สำหรับบทความเกษตร",
+      "Thai fonts (Noto Sans Thai)",
+      "Responsive design ทุกหน้าจอ",
+      "14 static pages",
     ],
   },
 ];
