@@ -49,27 +49,6 @@ const projects = [
     ],
   },
   {
-    name: "haocomcloud.com",
-    description:
-      "Haocomcloud Landing Page -- AI-powered platform infrastructure landing page สำหรับ 6 ระบบ production (cybersecurity, monitoring, automation ฯลฯ) สร้างด้วย Next.js 16 + Tailwind 4",
-    techStack: [
-      "Next.js 16",
-      "Tailwind CSS 4",
-      "TypeScript",
-      "Lucide React",
-      "Vercel",
-    ],
-    github: "https://github.com/haocomm/haocomcloud.com",
-    liveUrl: "https://haocomcloud.com",
-    status: "completed" as const,
-    highlights: [
-      "10 section landing page (Hero, Capabilities, Workflow, Dashboard, Trust, Deployed Systems)",
-      "Glass morphism design with purple/cyan gradient theme",
-      "Scroll-triggered animations",
-      "Deployed on Vercel (static export)",
-    ],
-  },
-  {
     name: "fongkhumfarm-v2",
     description:
       "เว็บไซต์ฟองคำฟาร์ม -- ฟาร์มผลิตปุ๋ยมูลไส้เดือน จ.เชียงใหม่ สร้างด้วย Next.js 15 + Tailwind CSS รองรับ responsive design ครบทุกอุปกรณ์",
@@ -82,6 +61,48 @@ const projects = [
       "Thai fonts (Noto Sans Thai)",
       "Responsive design ทุกหน้าจอ",
       "14 static pages",
+    ],
+  },
+  {
+    name: "oracle.ipptt.com",
+    description:
+      "Landing page สำหรับ Haocomm-AI Oracle -- ศูนย์กลางที่เชื่อมทุกงาน ทุกความคิด ทุกคน แสดง 5 Principles, Team Marine, Projects และ About",
+    techStack: ["Next.js 16", "Tailwind CSS 4", "TypeScript", "Vercel"],
+    github: "https://github.com/haocomm/oracle-ipptt",
+    liveUrl: "https://oracle.ipptt.com",
+    status: "completed" as const,
+    highlights: [
+      "11 components (Hero, Principles, TeamMarine, Projects, About)",
+      "Purple/emerald/gold theme + glassmorphism",
+      "5 Principles of Oracle แสดง interactive",
+    ],
+  },
+  {
+    name: "oracle-v3.ipptt.com",
+    description:
+      "Arra-Oracle v3 — Knowledge search engine ค้นหา retrospective, learnings, resonance จาก haocomm-ai-oracle vault พร้อม oracle-studio UI",
+    techStack: ["Bun", "TypeScript", "arra-oracle-v3", "oracle-studio", "nginx"],
+    github: "https://github.com/Soul-Brews-Studio/oracle-v3",
+    liveUrl: "https://oracle-v3.ipptt.com",
+    status: "completed" as const,
+    highlights: [
+      "166 documents indexed (61 resonance, 28 learnings, 77 retrospectives)",
+      "nginx reverse proxy + SSL (certbot)",
+      "oracle-studio UI สำหรับ browse/search documents",
+      "PM2 process management",
+    ],
+  },
+  {
+    name: "haocomm-ai-oracle-instruction",
+    description:
+      "เอกสาร instruction ครบชุดสำหรับตั้งค่าและใช้งาน Haocomm-AI Oracle — ตั้งแต่ Claude Code, Oracle Agent, marine team, vault structure จนถึง deployment",
+    techStack: ["Markdown", "GitHub"],
+    github: "https://github.com/haocomm/haocomm-ai-oracle-instruction",
+    status: "completed" as const,
+    highlights: [
+      "9 ไฟล์ instruction (README + 01-08)",
+      "1,369 บรรทัด documentation",
+      "ครอบคลุม setup, workflow, skills, และ deployment",
     ],
   },
 ];
