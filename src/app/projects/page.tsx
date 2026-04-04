@@ -73,9 +73,10 @@ const projects = [
     name: "fongkhumfarm-v2",
     description:
       "เว็บไซต์ฟองคำฟาร์ม -- ฟาร์มผลิตปุ๋ยมูลไส้เดือน จ.เชียงใหม่ สร้างด้วย Next.js 15 + Tailwind CSS รองรับ responsive design ครบทุกอุปกรณ์",
-    techStack: ["Next.js 15", "Tailwind CSS", "TypeScript", "Static Export"],
+    techStack: ["Next.js 15", "Tailwind CSS", "TypeScript", "Vercel"],
     github: "https://github.com/haocomm/fongkhumfarm-v2",
-    status: "in-progress" as const,
+    liveUrl: "https://fongkhumfarm.com",
+    status: "completed" as const,
     highlights: [
       "Blog system สำหรับบทความเกษตร",
       "Thai fonts (Noto Sans Thai)",
@@ -130,7 +131,7 @@ export default function ProjectsPage() {
                 </div>
                 <div>
                   <div className="text-2xl font-bold text-cyan-400 font-mono">
-                    {projects.filter((p) => p.status === "in-progress").length}
+                    {projects.filter((p) => p.status !== "completed").length}
                   </div>
                   <div className="text-sm text-navy-400 mt-1">In Progress</div>
                 </div>
